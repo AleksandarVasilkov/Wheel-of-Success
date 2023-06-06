@@ -37,7 +37,7 @@ const phrases = [
   function addPhraseToDisplay(arr) {
     const phraseList = document.querySelector('#phrase ul');
   
-    // Clear any existing content
+    
     phraseList.innerHTML = '';
   
     for (let i = 0; i < arr.length; i++) {
