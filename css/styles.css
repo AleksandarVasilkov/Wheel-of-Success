@@ -86,6 +86,11 @@ button {
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
+  transition: background-color 1s ease-in-out;
+}
+
+.letter.show {
+  background-color: lighten(color-win, 50%);
 }
 
 .space {
