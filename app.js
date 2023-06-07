@@ -34,10 +34,8 @@ const phrases = [
   const randomPhraseArray = getRandomPhraseAsArray(phrases);
   console.log(randomPhraseArray);
   
-  function addPhraseToDisplay(arr) {
+   function addPhraseToDisplay(arr) {
     const phraseList = document.querySelector('#phrase ul');
-  
-    
     phraseList.innerHTML = '';
   
     for (let i = 0; i < arr.length; i++) {
@@ -47,11 +45,14 @@ const phrases = [
   
       if (character !== ' ') {
         li.classList.add('letter');
+      } else {
+        li.classList.add('space');
       }
   
       phraseList.appendChild(li);
     }
   }
+  
   
   
   const phraseArray = getRandomPhraseAsArray(phrases);
